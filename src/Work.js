@@ -1,5 +1,3 @@
-import Project1Image from "./assets/Project1.png";
-import Project2Image from "./assets/Project2.png";
 import Footer from "./Footer";
 function Work() {
   return (
@@ -14,7 +12,7 @@ function Work() {
         <div className="all-work-container">
           <div className="one-work-container">
             <div className="img-work-container">
-              <img src={Project1Image} alt="Project1" />
+              <img src="https://i.ibb.co/yVm2w0Z/Project1.png" alt="Project1" />
             </div>
             <div className="body-work-container">
               <h4>Interval Timer</h4>
@@ -40,7 +38,7 @@ function Work() {
 
           <div className="one-work-container">
             <div className="img-work-container">
-              <img src={Project2Image} alt="Project2" />
+              <img src="https://i.ibb.co/VvvGTZ6/Project2.png" alt="Project2" />
             </div>
             <div className="body-work-container">
               <h4>Beeflix</h4>
