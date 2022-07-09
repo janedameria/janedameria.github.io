@@ -1,5 +1,9 @@
 import styled from "styled-components";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
 
 const Container = styled.div`
@@ -11,7 +15,13 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="experience" element={<Experience />} />
+        <Route path="projects" element={<Projects />} />
+      </Routes>
+
       <Navbar />
     </Container>
   );
