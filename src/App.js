@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
@@ -14,17 +15,23 @@ const Container = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
+  * {
+    font-family: "Noto Sans JP", sans-serif;
+  }
   .main-title {
     font-size: 3.8rem;
-    font-family: "Noto Sans JP", sans-serif;
     color: #fbfbfb;
     @media (max-width: 768px) {
       font-size: 2.6rem;
     }
   }
 
+  ul.my-list {
+    list-style-type: circle;
+    color: #fbfbfb
+  }
+
   .text {
-    font-family: "Noto Sans JP", sans-serif;
     color: #fbfbfb;
     @media (max-width: 768px) {
       font-size: 0.85rem;
