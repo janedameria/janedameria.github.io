@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import icon from "../me sketch.png";
+import "animate.css";
 
 const Container = styled.div`
   display: flex;
@@ -17,28 +18,22 @@ const ContainerColumn = styled.div`
   align-items: center;
 `;
 
-const MainTitle = styled.h1`
-  font-size: 64px;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #fbfbfb;
-`;
-
-const Text = styled.p`
-  font-family: "Noto Sans JP", sans-serif;
-  color: #fbfbfb;
-`;
-
 const MyImage = styled.img`
   width: 170px;
   height: 170px;
   border-radius: 5%;
 `;
+
 const Home = () => {
   return (
     <Container>
       <ContainerColumn>
-        <MainTitle>hi, i'm john!</MainTitle>
-        <Text>welcome to my little corner on the internet! (✿◠‿◠) </Text>
+        <h1 className="animate__animated animate__bounce main-title">
+          hi, i'm john!
+        </h1>
+        <p className="text">
+          welcome to my little corner on the internet! (✿◠‿◠){" "}
+        </p>
       </ContainerColumn>
       <MyImage src={icon} />
     </Container>

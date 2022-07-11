@@ -5,6 +5,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Navbar from "./components/Navbar";
+import { createGlobalStyle } from "styled-components";
 
 const Container = styled.div`
   background: linear-gradient(180deg, #354259 2.79%, #233c69 100%);
@@ -12,9 +13,23 @@ const Container = styled.div`
   position: relative;
 `;
 
+const GlobalStyle = createGlobalStyle`
+  .main-title {
+     font-size: 64px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fbfbfb;
+  }
+
+  .text {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #fbfbfb;
+  }
+`;
+
 function App() {
   return (
     <Container>
+      <GlobalStyle />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
