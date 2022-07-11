@@ -24,6 +24,10 @@ const StyledLink = styled(NavLink)`
   &.active {
     text-decoration: underline;
   }
+
+  @media (max-width: 768px) {
+    font-size: 0.88rem;
+  }
 `;
 
 const Navbar = () => {

@@ -8,6 +8,7 @@ const Container = styled.div`
   height: 100%;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 2em;
 `;
 
 const ContainerColumn = styled.div`
@@ -22,6 +23,10 @@ const MyImage = styled.img`
   width: 170px;
   height: 170px;
   border-radius: 5%;
+  @media (max-width: 768px) {
+    width: 140px;
+    height: 140px;
+  }
 `;
 
 const Home = () => {

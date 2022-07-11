@@ -15,14 +15,20 @@ const Container = styled.div`
 
 const GlobalStyle = createGlobalStyle`
   .main-title {
-     font-size: 64px;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #fbfbfb;
+    font-size: 3.8rem;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #fbfbfb;
+    @media (max-width: 768px) {
+      font-size: 2.6rem;
+    }
   }
 
   .text {
     font-family: "Noto Sans JP", sans-serif;
     color: #fbfbfb;
+    @media (max-width: 768px) {
+      font-size: 0.85rem;
+    }
   }
 `;
 
