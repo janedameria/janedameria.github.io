@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import icon from "../me sketch.png";
+import icon from "../my_removed.png";
 import "animate.css";
 
 const Container = styled.div`
   display: flex;
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  margin: 0 2em;
+  width: 100vw;
+  margin: 0 auto;
 `;
 
 const ContainerColumn = styled.div`
@@ -20,9 +21,9 @@ const ContainerColumn = styled.div`
 `;
 
 const MyImage = styled.img`
-  width: 170px;
-  height: 170px;
-  border-radius: 5%;
+  width: 200px;
+  animation-duration: 10s;
+
   @media (max-width: 768px) {
     width: 140px;
     height: 140px;
@@ -32,14 +33,17 @@ const Home = () => {
   return (
     <Container>
       <ContainerColumn>
-        <h1 className="animate__animated animate__bounce main-title">
-          hi, i'm john!
+        <h1 className="animate__animated animate__bounce  main-title">
+          hi, i'm jane!
         </h1>
         <p className="text animate__animated  animate__fadeIn">
           welcome to my little corner on the internet! (✿◠‿◠){" "}
         </p>
       </ContainerColumn>
-      <MyImage src={icon} />
+      <MyImage
+        src={icon}
+        className="animate__animated animate__infinite animate__swing"
+      />
     </Container>
   );
 };

@@ -27,7 +27,7 @@ const Experience = () => {
   const ListExperience = [
     {
       title: "Fullstack Developer Intern ",
-      company: "@ PT Bank AIUEO",
+      company: "@ PT Bank BTPN",
       date: "February 2021 - February 2022",
       description: [
         "Maintain and improve projects using MERN stack (MongoDB, Express.js,React and Node.js)",
