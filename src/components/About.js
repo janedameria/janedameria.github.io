@@ -49,12 +49,12 @@ const MyImage = styled.img`
 
 const About = () => {
   return (
-    <Container>
+    <Container className="animate__animated  animate__fadeIn">
       <ContainerColumn justify_center>
         <h1 className="main-title">John Doe</h1>
         <p className="text">
-          I’m a fresh graduate from University. I have a great interest in
-          software engineering and web development.
+          I’m a fresh graduate from Bina Nusantara University. I have a great
+          interest in software engineering and web development.
         </p>
         <ContainerIcon>
           <a

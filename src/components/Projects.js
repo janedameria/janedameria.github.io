@@ -95,7 +95,7 @@ const Projects = () => {
   ];
 
   return (
-    <MainContainer>
+    <MainContainer className="animate__animated  animate__fadeIn">
       {ListOfProjects.map((value) => (
         <ProjectContainer>
           <Container>

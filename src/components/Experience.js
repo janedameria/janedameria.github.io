@@ -68,7 +68,7 @@ const Experience = () => {
   };
 
   return (
-    <Container>
+    <Container className="animate__animated  animate__fadeIn">
       {renderExperience()}
       <Navbar />
     </Container>

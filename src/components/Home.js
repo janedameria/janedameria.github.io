@@ -28,7 +28,6 @@ const MyImage = styled.img`
     height: 140px;
   }
 `;
-
 const Home = () => {
   return (
     <Container>
@@ -36,7 +35,7 @@ const Home = () => {
         <h1 className="animate__animated animate__bounce main-title">
           hi, i'm john!
         </h1>
-        <p className="text">
+        <p className="text animate__animated  animate__fadeIn">
           welcome to my little corner on the internet! (✿◠‿◠){" "}
         </p>
       </ContainerColumn>
