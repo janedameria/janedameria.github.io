@@ -29,6 +29,7 @@ const GlobalStyle = createGlobalStyle`
   ul.my-list {
     list-style-type: circle;
     color: #fbfbfb
+    
   }
 
   .text {

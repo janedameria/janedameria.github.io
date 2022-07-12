@@ -42,16 +42,18 @@ const Experience = () => {
     return ListExperience.map((value) => (
       <Grid>
         <Row>
-          <Col md={6}>
-            <Row end="xs">
+          <Col md={6} xs={12}>
+            <Row end="md">
               <Title>
                 {value.title}
                 <span>{value.company}</span>
               </Title>
+            </Row>
+            <Row end="md">
               <Text>{value.date}</Text>
             </Row>
           </Col>
-          <Col md={6}>
+          <Col md={6} xs={12}>
             <ul className="my-list">
               {value.description.map((value) => (
                 <li>

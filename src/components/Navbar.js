@@ -8,6 +8,12 @@ const Container = styled.div`
   justify-content: center;
   position: absolute;
   bottom: 3em;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    bottom: 2em;
+    right: 0;
+  }
 `;
 
 const StyledLink = styled(NavLink)`
