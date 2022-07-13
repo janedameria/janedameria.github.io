@@ -1,27 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+import { Text, Title, Container } from "./ExperienceStyles";
 import { Grid, Col, Row } from "react-styled-flexboxgrid";
-import Navbar from "../components/Navbar";
-
-const Container = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Title = styled.h3`
-  color: #c2ded1;
-
-  > span {
-    color: #ece5c7;
-  }
-`;
-
-const Text = styled.p`
-  color: #fbfbfb;
-`;
+import Navbar from "../Navbar/Navbar";
 
 const Experience = () => {
   const ListExperience = [
